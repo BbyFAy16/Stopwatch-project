@@ -141,4 +141,14 @@ document.addEventListener("DOMContentLoaded", () => {
     themeToggle.textContent = document.body.classList.contains("light") ? "Dark" : "Light";
   });
 
+  // Splash screen
+  const splash = document.getElementById("splash-screen");
+  const mainContent = document.getElementById("main-content");
+
+  // Hides after 2 seconds
+  setTimeout(() => {
+    splash.classList.add("hidden");
+    mainContent.style.display = "block";
+  }, 5000);
+
 });
