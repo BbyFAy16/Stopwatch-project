@@ -4,11 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const lapBtn = document.getElementById("lap");
   const lapsTbody = document.getElementById("laps");
   const themeToggle = document.getElementById("theme-toggle");
-  const helpBtn = document.getElementById("help-btn");
-  const helpModal = document.getElementById("help-modal");
-  const closeHelp = document.getElementById("close-help");
-  const minimalToggle = document.getElementById("minimal-toggle");
-  const colorPicker = document.getElementById("color-picker");
   const lapStats = document.getElementById("lap-stats");
 
   let timer = null;
@@ -143,22 +138,7 @@ document.addEventListener("DOMContentLoaded", () => {
   themeToggle.addEventListener("click", () => {
     document.body.classList.toggle("light");
     document.body.classList.toggle("dark");
-    themeToggle.textContent = document.body.classList.contains("dark") ? "Light" : "Dark";
-  });
-
-  // Help modal
-  helpBtn.addEventListener("click", () => helpModal.style.display = "flex");
-  closeHelp.addEventListener("click", () => helpModal.style.display = "none");
-
-  // Minimal mode
-  minimalToggle.addEventListener("click", () => document.body.classList.toggle("minimal"));
-
-  // Keyboard shortcuts
-  document.addEventListener("keydown", e => {
-    if (e.code === "Space") { e.preventDefault(); startBtn.click(); }
-    if (e.key.toLowerCase() === "l") lapBtn.click();
-    if (e.key.toLowerCase() === "r") resetAll();
-    if (e.key.toLowerCase() === "m") document.body.classList.toggle("minimal");
+    themeToggle.textContent = document.body.classList.contains("Light") ? "Light" : "Dark";
   });
 
 });
