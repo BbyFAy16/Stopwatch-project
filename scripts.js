@@ -149,6 +149,6 @@ document.addEventListener("DOMContentLoaded", () => {
   setTimeout(() => {
     splash.classList.add("hidden");
     mainContent.style.display = "block";
-  }, 5000);
+  }, 3000);
 
 });
