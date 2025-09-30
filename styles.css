@@ -13,6 +13,43 @@ body {
   transition: background 1.6s ease, color 1.6s ease;
 }
 
+/* Splash Screen */
+#splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--splash-bg, #fff);
+  color: var(--splash-color, #000);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Open Sans', sans-serif;
+  transition: opacity 1s ease, visibility 1s ease;
+  z-index: 1000;
+}
+
+#splash-screen h1 {
+  font-size: 1.8rem;
+  margin-top: 15px;
+}
+
+#splash-screen p {
+  font-size: 1rem;
+  margin-top: 5px;
+  opacity: 0.8;
+}
+
+/* Hide splash */
+#splash-screen.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Main content */
+
 .header {
   position: absolute;
   top: 20px;
