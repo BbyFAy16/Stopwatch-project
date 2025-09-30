@@ -33,12 +33,13 @@ body {
 
 #splash-screen h1 {
   font-size: 1.8rem;
-  margin-top: 15px;
+  align-self: center;
+  margin-top: 5px;
 }
 
 #splash-screen p {
   font-size: 1rem;
-  margin-top: 5px;
+  margin-top: 10px;
   opacity: 0.8;
 }
 
